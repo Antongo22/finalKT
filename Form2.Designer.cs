@@ -50,6 +50,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -164,56 +165,56 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(110, 40);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(270, 20);
             this.textBox2.TabIndex = 12;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(131, 67);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(249, 20);
             this.textBox3.TabIndex = 13;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(139, 93);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(241, 20);
             this.textBox4.TabIndex = 14;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(131, 119);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(108, 20);
+            this.textBox5.Size = new System.Drawing.Size(249, 20);
             this.textBox5.TabIndex = 15;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(85, 178);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.Size = new System.Drawing.Size(295, 20);
             this.textBox6.TabIndex = 17;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(143, 205);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.Size = new System.Drawing.Size(237, 20);
             this.textBox7.TabIndex = 18;
             // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(166, 294);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.Size = new System.Drawing.Size(214, 20);
             this.textBox9.TabIndex = 19;
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(146, 231);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.Size = new System.Drawing.Size(234, 20);
             this.textBox8.TabIndex = 20;
             // 
             // dateTimePicker1
@@ -230,11 +231,22 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 22;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(23, 328);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Сохранить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(392, 354);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox8);
@@ -289,5 +301,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button button1;
     }
 }

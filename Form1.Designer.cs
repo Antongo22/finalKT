@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.fBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.fin2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fin2DataSet = new finalKT.fin2DataSet();
             this.fBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fin1DataSet = new finalKT.fin1DataSet();
             this.fin1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fTableAdapter = new finalKT.fin1DataSetTableAdapters.FTableAdapter();
             this.buttonCansel = new System.Windows.Forms.Button();
             this.fBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fTableAdapter1 = new finalKT.fin2DataSetTableAdapters.FTableAdapter();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.fBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фИОКлиентаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.паспортDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fin2DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fin2DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fin1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fin1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fBindingSource3)).BeginInit();
@@ -67,6 +68,14 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn,
@@ -81,8 +90,24 @@
             this.датаНачалаПрокатаDataGridViewTextBoxColumn,
             this.стоимостьДняDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.fBindingSource3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(1, 0);
             this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(1146, 388);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -104,21 +129,12 @@
             // fBindingSource
             // 
             this.fBindingSource.DataMember = "F";
-            this.fBindingSource.DataSource = this.fin1DataSet;
-            // 
-            // fin1DataSet
-            // 
-            this.fin1DataSet.DataSetName = "fin1DataSet";
-            this.fin1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // fin1DataSetBindingSource
             // 
-            this.fin1DataSetBindingSource.DataSource = this.fin1DataSet;
             this.fin1DataSetBindingSource.Position = 0;
             // 
             // fTableAdapter
-            // 
-            this.fTableAdapter.ClearBeforeFill = true;
             // 
             // buttonCansel
             // 
@@ -143,7 +159,7 @@
             // 
             this.buttonAdd.Location = new System.Drawing.Point(110, 415);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.Size = new System.Drawing.Size(76, 23);
             this.buttonAdd.TabIndex = 2;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -153,6 +169,16 @@
             // 
             this.fBindingSource3.DataMember = "F";
             this.fBindingSource3.DataSource = this.fin2DataSetBindingSource;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(212, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Редактировать";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // кодDataGridViewTextBoxColumn
             // 
@@ -225,6 +251,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonCansel);
             this.Controls.Add(this.dataGridView1);
@@ -236,7 +263,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fin2DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fin2DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fin1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fin1DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fBindingSource3)).EndInit();
@@ -248,9 +274,7 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource fin1DataSetBindingSource;
-        private fin1DataSet fin1DataSet;
         private System.Windows.Forms.BindingSource fBindingSource;
-        private fin1DataSetTableAdapters.FTableAdapter fTableAdapter;
         private System.Windows.Forms.Button buttonCansel;
         private fin2DataSet fin2DataSet;
         private System.Windows.Forms.BindingSource fBindingSource1;
@@ -258,6 +282,8 @@
         private System.Windows.Forms.BindingSource fBindingSource2;
         private System.Windows.Forms.BindingSource fin2DataSetBindingSource;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.BindingSource fBindingSource3;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn фИОКлиентаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn паспортDataGridViewTextBoxColumn;
@@ -269,7 +295,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn страховаяСтоимостьАвтомобиляDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаНачалаПрокатаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn стоимостьДняDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource fBindingSource3;
     }
 }
 
